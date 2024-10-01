@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
           child: Container(
-            margin: EdgeInsets.only(),
+            margin: const EdgeInsets.only(),
             child: Column(
               children: [
                 Column(
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          margin: EdgeInsets.only(top: 100),
+                          margin: const EdgeInsets.only(top: 100),
                           color: const Color.fromARGB(255, 103, 89, 89),
                           height: 350,
                           width: 10,
@@ -40,13 +40,15 @@ class MyApp extends StatelessWidget {
                         Column(
                           children: [
                             Container(
-                              margin: EdgeInsets.only(),
+                              margin: const EdgeInsets.only(),
                               color: Colors.orange,
                               width: 250,
                               height: 50,
                             ),
                             Container(
                               color: Colors.white,
+                              width: 50,
+                              height: 50,
                               child: Container(
                                 height: 10,
                                 width: 50,
@@ -58,11 +60,9 @@ class MyApp extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              width: 50,
-                              height: 50,
                             ),
                             Container(
-                              margin: EdgeInsets.only(bottom: 100),
+                              margin: const EdgeInsets.only(bottom: 100),
                               color: Colors.green,
                               width: 250,
                               height: 50,
@@ -74,7 +74,7 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
                 Container(
-                  margin: EdgeInsets.only(right: 250),
+                  margin: const EdgeInsets.only(right: 250),
                   child: Column(
                     children: [
                       Container(
