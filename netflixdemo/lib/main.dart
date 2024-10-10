@@ -5,6 +5,8 @@ void main() {
 }
 
 class NetflixApp extends StatelessWidget {
+  const NetflixApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -46,11 +48,13 @@ class NetflixHomePage extends StatelessWidget {
     'https://image.tmdb.org/t/p/w500/A5P3vFu2xMl9TXOP0xQ97pKPpxH.jpg', // The Equalizer 3
   ];
 
+  const NetflixHomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Netflix',
           style: TextStyle(
             color: Colors.red,
@@ -62,7 +66,7 @@ class NetflixHomePage extends StatelessWidget {
         elevation: 0,
         actions: [
           IconButton(
-            icon: Icon(Icons.search, color: Colors.white),
+            icon: const Icon(Icons.search, color: Colors.white),
             onPressed: () {
               // Search functionality can be implemented here
             },
@@ -79,7 +83,7 @@ class NetflixHomePage extends StatelessWidget {
               children: [
                 Container(
                   height: 500,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: NetworkImage(
                           'https://image.tmdb.org/t/p/original/5YZbUmjbMa3ClvSW1Wj3D6XGolb.jpg'), // Guardians of the Galaxy Vol. 3
@@ -104,7 +108,7 @@ class NetflixHomePage extends StatelessWidget {
             ),
 
             // Movie Categories
-            Padding(
+            const Padding(
               padding: EdgeInsets.all(16.0),
               child: Text(
                 'Trending Now',
@@ -113,7 +117,7 @@ class NetflixHomePage extends StatelessWidget {
             ),
             buildMovieList(trendingMovies),
 
-            Padding(
+            const Padding(
               padding: EdgeInsets.all(16.0),
               child: Text(
                 'Popular on Netflix',
@@ -122,7 +126,7 @@ class NetflixHomePage extends StatelessWidget {
             ),
             buildMovieList(popularMovies),
 
-            Padding(
+            const Padding(
               padding: EdgeInsets.all(16.0),
               child: Text(
                 'New Releases',
@@ -137,7 +141,7 @@ class NetflixHomePage extends StatelessWidget {
   }
 
   Widget buildMovieList(List<String> movies) {
-    return Container(
+    return SizedBox(
       height: 180,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
@@ -155,7 +159,7 @@ class NetflixHomePage extends StatelessWidget {
                   return Container(
                     width: 160,
                     color: Colors.grey,
-                    child: Icon(Icons.error, color: Colors.white),
+                    child: const Icon(Icons.error, color: Colors.white),
                   );
                 },
               ),

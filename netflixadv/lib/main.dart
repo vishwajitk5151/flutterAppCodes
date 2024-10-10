@@ -6,6 +6,8 @@ void main() {
 }
 
 class NetflixApp extends StatelessWidget {
+  const NetflixApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -38,11 +40,13 @@ class NetflixHomePage extends StatelessWidget {
     'https://image.tmdb.org/t/p/w500/3GrRgt6CiLIUXUtoktcv1g2iwT5.jpg',
   ];
 
+  const NetflixHomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Netflix',
           style: TextStyle(
               color: Colors.red, fontWeight: FontWeight.w900, fontSize: 25),
@@ -51,7 +55,7 @@ class NetflixHomePage extends StatelessWidget {
         elevation: 0,
         actions: [
           IconButton(
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search),
             onPressed: () {
               Navigator.push(
                 context,
@@ -70,7 +74,7 @@ class NetflixHomePage extends StatelessWidget {
               children: [
                 Container(
                   height: 500,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: NetworkImage(
                           'https://image.tmdb.org/t/p/original/5YZbUmjbMa3ClvSW1Wj3D6XGolb.jpg'), // Guardians of the Galaxy Vol. 3
@@ -93,16 +97,16 @@ class NetflixHomePage extends StatelessWidget {
                 ),
               ],
             ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
+            const Padding(
+              padding: EdgeInsets.all(16.0),
               child: Text(
                 'Trending Now',
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
               ),
             ),
             buildMovieList(trendingMovies, context),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
+            const Padding(
+              padding: EdgeInsets.all(16.0),
               child: Text(
                 'Popular on Netflix',
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
@@ -116,7 +120,7 @@ class NetflixHomePage extends StatelessWidget {
         backgroundColor: Colors.black,
         selectedItemColor: Colors.red,
         unselectedItemColor: Colors.white,
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',
@@ -148,7 +152,7 @@ class NetflixHomePage extends StatelessWidget {
   }
 
   Widget buildMovieList(List<String> movies, BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 180,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
@@ -185,19 +189,19 @@ class NetflixHomePage extends StatelessWidget {
 class MovieDetailsPage extends StatelessWidget {
   final String imageUrl;
 
-  MovieDetailsPage({required this.imageUrl});
+  const MovieDetailsPage({super.key, required this.imageUrl});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Movie Details'),
+        title: const Text('Movie Details'),
       ),
       body: Column(
         children: [
           Image.network(imageUrl),
-          Padding(
-            padding: const EdgeInsets.all(16.0),
+          const Padding(
+            padding: EdgeInsets.all(16.0),
             child: Text(
               'This is a detailed description of the movie. You can add movie information like plot, director, cast, and more here.',
               style: TextStyle(fontSize: 18),
@@ -210,13 +214,15 @@ class MovieDetailsPage extends StatelessWidget {
 }
 
 class SearchPage extends StatelessWidget {
+  const SearchPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Search Movies'),
+        title: const Text('Search Movies'),
       ),
-      body: Center(
+      body: const Center(
         child: Text('Search functionality coming soon!'),
       ),
     );

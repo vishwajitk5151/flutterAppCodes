@@ -119,14 +119,14 @@ class _DemoAppState extends State {
                     width: 150,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      color: Color.fromRGBO(167, 220, 246, 1),
+                      color: const Color.fromRGBO(167, 220, 246, 1),
                     ),
                     child: const Center(
                       child: Text(
                         "Machine Learning",
                         style: TextStyle(
                           fontSize: 16,
-                          color: const Color.fromRGBO(0, 91, 135, 1),
+                          color: Color.fromRGBO(0, 91, 135, 1),
                           fontWeight: FontWeight.w500,
                         ),
                       ),
@@ -140,14 +140,14 @@ class _DemoAppState extends State {
                     width: 150,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      color: Color.fromRGBO(167, 220, 246, 1),
+                      color: const Color.fromRGBO(167, 220, 246, 1),
                     ),
                     child: const Center(
                       child: Text(
                         "Apache space",
                         style: TextStyle(
                           fontSize: 16,
-                          color: const Color.fromRGBO(0, 91, 135, 1),
+                          color: Color.fromRGBO(0, 91, 135, 1),
                           fontWeight: FontWeight.w500,
                         ),
                       ),
@@ -170,7 +170,7 @@ class _DemoAppState extends State {
                     height: 140,
                     width: 370,
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 236, 221, 221),
+                      color: const Color.fromARGB(255, 236, 221, 221),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Row(children: [
@@ -227,16 +227,16 @@ class _DemoAppState extends State {
                                     decoration: const BoxDecoration(
                                         color:
                                             Color.fromRGBO(167, 220, 246, 1)),
-                                    child: Center(
-                                      child: const Text("Data Science",
+                                    child: const Center(
+                                      child: Text("Data Science",
                                           style: TextStyle(
                                             fontSize: 12,
-                                            color: const Color.fromRGBO(
+                                            color: Color.fromRGBO(
                                                 0, 91, 135, 1),
                                             fontWeight: FontWeight.w500,
                                           )),
                                     )),
-                                SizedBox(
+                                const SizedBox(
                                   width: 10,
                                 ),
                                 Container(
@@ -245,11 +245,11 @@ class _DemoAppState extends State {
                                     decoration: const BoxDecoration(
                                         color:
                                             Color.fromRGBO(167, 220, 246, 1)),
-                                    child: Center(
-                                      child: const Text("Data Science",
+                                    child: const Center(
+                                      child: Text("Data Science",
                                           style: TextStyle(
                                             fontSize: 12,
-                                            color: const Color.fromRGBO(
+                                            color: Color.fromRGBO(
                                                 0, 91, 135, 1),
                                             fontWeight: FontWeight.w500,
                                           )),
@@ -261,14 +261,14 @@ class _DemoAppState extends State {
                       )
                     ]),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Container(
                     height: 140,
                     width: 370,
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 236, 221, 221),
+                      color: const Color.fromARGB(255, 236, 221, 221),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Row(children: [
@@ -325,16 +325,16 @@ class _DemoAppState extends State {
                                     decoration: const BoxDecoration(
                                         color:
                                             Color.fromRGBO(167, 220, 246, 1)),
-                                    child: Center(
-                                      child: const Text("Data Science",
+                                    child: const Center(
+                                      child: Text("Data Science",
                                           style: TextStyle(
                                             fontSize: 12,
-                                            color: const Color.fromRGBO(
+                                            color: Color.fromRGBO(
                                                 0, 91, 135, 1),
                                             fontWeight: FontWeight.w500,
                                           )),
                                     )),
-                                SizedBox(
+                                const SizedBox(
                                   width: 10,
                                 ),
                                 Container(
@@ -343,11 +343,11 @@ class _DemoAppState extends State {
                                     decoration: const BoxDecoration(
                                         color:
                                             Color.fromRGBO(167, 220, 246, 1)),
-                                    child: Center(
-                                      child: const Text("Data Science",
+                                    child: const Center(
+                                      child: Text("Data Science",
                                           style: TextStyle(
                                             fontSize: 12,
-                                            color: const Color.fromRGBO(
+                                            color: Color.fromRGBO(
                                                 0, 91, 135, 1),
                                             fontWeight: FontWeight.w500,
                                           )),
@@ -359,14 +359,14 @@ class _DemoAppState extends State {
                       )
                     ]),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Container(
                     height: 140,
                     width: 370,
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 236, 221, 221),
+                      color: const Color.fromARGB(255, 236, 221, 221),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Row(children: [
@@ -423,16 +423,16 @@ class _DemoAppState extends State {
                                     decoration: const BoxDecoration(
                                         color:
                                             Color.fromRGBO(167, 220, 246, 1)),
-                                    child: Center(
-                                      child: const Text("Data Science",
+                                    child: const Center(
+                                      child: Text("Data Science",
                                           style: TextStyle(
                                             fontSize: 12,
-                                            color: const Color.fromRGBO(
+                                            color: Color.fromRGBO(
                                                 0, 91, 135, 1),
                                             fontWeight: FontWeight.w500,
                                           )),
                                     )),
-                                SizedBox(
+                                const SizedBox(
                                   width: 10,
                                 ),
                                 Container(
@@ -441,11 +441,11 @@ class _DemoAppState extends State {
                                     decoration: const BoxDecoration(
                                         color:
                                             Color.fromRGBO(167, 220, 246, 1)),
-                                    child: Center(
-                                      child: const Text("Data Science",
+                                    child: const Center(
+                                      child: Text("Data Science",
                                           style: TextStyle(
                                             fontSize: 12,
-                                            color: const Color.fromRGBO(
+                                            color: Color.fromRGBO(
                                                 0, 91, 135, 1),
                                             fontWeight: FontWeight.w500,
                                           )),
@@ -457,14 +457,14 @@ class _DemoAppState extends State {
                       )
                     ]),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Container(
                     height: 140,
                     width: 370,
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 236, 221, 221),
+                      color: const Color.fromARGB(255, 236, 221, 221),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Row(children: [
@@ -521,16 +521,16 @@ class _DemoAppState extends State {
                                     decoration: const BoxDecoration(
                                         color:
                                             Color.fromRGBO(167, 220, 246, 1)),
-                                    child: Center(
-                                      child: const Text("Data Science",
+                                    child: const Center(
+                                      child: Text("Data Science",
                                           style: TextStyle(
                                             fontSize: 12,
-                                            color: const Color.fromRGBO(
+                                            color: Color.fromRGBO(
                                                 0, 91, 135, 1),
                                             fontWeight: FontWeight.w500,
                                           )),
                                     )),
-                                SizedBox(
+                                const SizedBox(
                                   width: 10,
                                 ),
                                 Container(
@@ -539,11 +539,11 @@ class _DemoAppState extends State {
                                     decoration: const BoxDecoration(
                                         color:
                                             Color.fromRGBO(167, 220, 246, 1)),
-                                    child: Center(
-                                      child: const Text("Data Science",
+                                    child: const Center(
+                                      child: Text("Data Science",
                                           style: TextStyle(
                                             fontSize: 12,
-                                            color: const Color.fromRGBO(
+                                            color: Color.fromRGBO(
                                                 0, 91, 135, 1),
                                             fontWeight: FontWeight.w500,
                                           )),
