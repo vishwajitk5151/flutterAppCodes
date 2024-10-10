@@ -1,0 +1,42 @@
+name: snapshotcloneapp
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/playstore.png
+    - assets/play.png
+    - assets/vsk.jpg
+    - assets/playpoint.webp
+    - assets/genshin.jpeg
+    - assets/genshin1.webp
+    - assets/genshinapk.webp
+    - assets/cocapk.jpeg
+    - assets/cocbg.jpg
+    - assets/shadowapk.webp
+    - assets/clashroyalapk.png
+    - assets/carxstreetapk.jpeg
+    - assets/bgmibg.jpeg
+    - assets/bgmiapk.webp
+    - assets/bgmibg1.jpeg
+    - assets/playstoreicon.png
+    - assets/candycrushapk.png
+    - assets/codapk.jpeg
+    - assets/minecraftapk.webp
+    - assets/whatappapk1.jpeg
+    - assets/instagramapk.jpeg
+    - assets/snapchatapk.png

@@ -52,7 +52,7 @@ class MyApp extends StatelessWidget {
                               child: Container(
                                 height: 10,
                                 width: 50,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   image: DecorationImage(
                                     image: NetworkImage(
                                         "https://i.pinimg.com/564x/46/0f/8d/460f8de4addfb06ad93dd276d7d102f8.jpg"), // Direct URL to an image
