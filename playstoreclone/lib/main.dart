@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyPlayStoreApp());
+  runApp(const MyPlayStoreApp());
 }
 
 class MyPlayStoreApp extends StatelessWidget {
@@ -17,7 +17,7 @@ class MyPlayStoreApp extends StatelessWidget {
         primarySwatch: Colors.green,
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: PlayStoreHomePage(),
+      home: const PlayStoreHomePage(),
       debugShowCheckedModeBanner: false,
     );
   }
@@ -34,7 +34,8 @@ class PlayStoreHomePage extends StatelessWidget {
           child: AppBar(
             backgroundColor: Colors.white,
             elevation: 1,
-            shape: const Border(bottom: BorderSide(color: Colors.grey, width: 1)),
+            shape:
+                const Border(bottom: BorderSide(color: Colors.grey, width: 1)),
             flexibleSpace: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 0),
               child: Column(
@@ -65,8 +66,7 @@ class PlayStoreHomePage extends StatelessWidget {
                                   padding: const EdgeInsets.all(4),
                                   decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
-                                    color:
-                                        Color.fromARGB(255, 2, 94, 170),
+                                    color: Color.fromARGB(255, 2, 94, 170),
                                   ),
                                   child: Image.asset(
                                     'assets/playpoint.webp',
@@ -201,7 +201,8 @@ class PlayStoreHomePage extends StatelessWidget {
                   const SizedBox(
                     width: 60,
                   ),
-                  IconButton(onPressed: () {}, icon: const Icon(Icons.more_vert))
+                  IconButton(
+                      onPressed: () {}, icon: const Icon(Icons.more_vert))
                 ]),
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
@@ -353,36 +354,39 @@ class PlayStoreHomePage extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   child: Row(
                     children: [
-                      Column(
-                        children: [
-                          _buildScrollablegames(
-                              "assets/whatappapk1.jpeg",
-                              "WhatsApp Messenger",
-                              "WhatsApp LLC Communication c",
-                              "4.5 ",
-                              "106 MB",
-                              "₹260.00"),
-                          const SizedBox(
-                            height: 15,
-                          ),
-                          _buildScrollablegames(
-                              "assets/instagramapk.jpeg",
-                              "Instagram",
-                              "Instagram Social Networking c",
-                              "4.2 ",
-                              "682 MB",
-                              ""),
-                          const SizedBox(
-                            height: 15,
-                          ),
-                          _buildScrollablegames(
-                              "assets/snapchatapk.png",
-                              "SnapChat",
-                              "Carx Technologies LLC Racing",
-                              "4.4 ",
-                              "1.2 GB",
-                              ""),
-                        ],
+                      Container(
+                        width: MediaQuery.of(context).size.width,
+                        child: Column(
+                          children: [
+                            _buildScrollablegames(
+                                "assets/whatappapk1.jpeg",
+                                "WhatsApp Messenger",
+                                "WhatsApp LLC Communication",
+                                "4.5 ",
+                                "106 MB",
+                                "₹260.00"),
+                            const SizedBox(
+                              height: 15,
+                            ),
+                            _buildScrollablegames(
+                                "assets/instagramapk.jpeg",
+                                "Instagram",
+                                "Instagram Social Networking c",
+                                "4.2 ",
+                                "682 MB",
+                                ""),
+                            const SizedBox(
+                              height: 15,
+                            ),
+                            _buildScrollablegames(
+                                "assets/snapchatapk.png",
+                                "SnapChat",
+                                "Carx Technologies LLC Racing",
+                                "4.4 ",
+                                "1.2 GB",
+                                ""),
+                          ],
+                        ),
                       ),
                       const SizedBox(
                         width: 35,
@@ -474,7 +478,7 @@ class PlayStoreHomePage extends StatelessWidget {
       child: Text(
         text,
         style: const TextStyle(
-            color: const Color.fromARGB(255, 2, 80, 143),
+            color: Color.fromARGB(255, 2, 80, 143),
             fontWeight: FontWeight.w600,
             fontSize: 16),
       ),
@@ -554,7 +558,8 @@ Widget buildScrollableStack(
             width: 103,
             decoration: BoxDecoration(
               color: Colors.white.withOpacity(0.7),
-              borderRadius: const BorderRadius.only(bottomRight: Radius.circular(20)),
+              borderRadius:
+                  const BorderRadius.only(bottomRight: Radius.circular(20)),
             ),
             child: const Center(
               child: Text(

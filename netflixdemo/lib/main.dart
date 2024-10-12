@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(NetflixApp());
+  runApp(const NetflixApp());
 }
 
 class NetflixApp extends StatelessWidget {
@@ -48,7 +48,7 @@ class NetflixHomePage extends StatelessWidget {
     'https://image.tmdb.org/t/p/w500/A5P3vFu2xMl9TXOP0xQ97pKPpxH.jpg', // The Equalizer 3
   ];
 
-  const NetflixHomePage({super.key});
+   NetflixHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {

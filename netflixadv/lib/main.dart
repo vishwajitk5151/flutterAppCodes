@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'ProfilePage.dart';
 
 void main() {
-  runApp(NetflixApp());
+  runApp(const NetflixApp());
 }
 
 class NetflixApp extends StatelessWidget {
@@ -17,7 +17,7 @@ class NetflixApp extends StatelessWidget {
         primaryColor: Colors.black,
         scaffoldBackgroundColor: Colors.black,
       ),
-      home: NetflixHomePage(),
+      home: const NetflixHomePage(),
       debugShowCheckedModeBanner: false,
     );
   }
@@ -59,7 +59,7 @@ class NetflixHomePage extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => SearchPage()),
+                MaterialPageRoute(builder: (context) => const SearchPage()),
               );
             },
           ),
@@ -138,12 +138,12 @@ class NetflixHomePage extends StatelessWidget {
           if (index == 1) {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => SearchPage()),
+              MaterialPageRoute(builder: (context) => const SearchPage()),
             );
           } else if (index == 2) {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => ProfilePage()),
+              MaterialPageRoute(builder: (context) => const ProfilePage()),
             );
           }
         },

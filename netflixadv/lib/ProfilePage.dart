@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(ProfilePage());
+  runApp(const ProfilePage());
 }
 
 class ProfilePage extends StatelessWidget {
