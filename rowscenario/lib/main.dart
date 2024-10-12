@@ -12,10 +12,10 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Center(child: Text("Column Demo")),
+          title: const Center(child: Text("Column Demo")),
           backgroundColor: const Color.fromARGB(255, 230, 192, 192),
         ),
-        body: Container(
+        body: SizedBox(
           height: MediaQuery.of(context).size.height,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,

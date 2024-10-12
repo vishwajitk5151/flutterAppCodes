@@ -12,7 +12,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
           appBar: AppBar(
-            title: Text(
+            title: const Text(
               "AppBar",
               style: TextStyle(
                   fontWeight: FontWeight.w700,
@@ -33,7 +33,7 @@ class MainApp extends StatelessWidget {
               decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 219, 144, 139),
                   border: Border.all(color: Colors.red, width: 10),
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(20),
                       bottomRight: Radius.circular(20))),
             ),

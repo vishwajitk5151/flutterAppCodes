@@ -27,12 +27,12 @@ class MainApp extends StatelessWidget {
           ),
           actions: [
             Container(
-              margin: EdgeInsets.only(right: 10),
+              margin: const EdgeInsets.only(right: 10),
               height: 20,
               width: 20,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20), color: Colors.white),
-              child: Icon(Icons.menu),
+              child: const Icon(Icons.menu),
             )
           ],
         ),

@@ -12,7 +12,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
           appBar: AppBar(
-            title: Text(
+            title: const Text(
               "AppBar",
               style: TextStyle(
                   fontWeight: FontWeight.w700,
@@ -34,8 +34,8 @@ class MainApp extends StatelessWidget {
                   color: const Color.fromARGB(255, 219, 157, 234),
                   border: Border.all(color: Colors.purple),
                   borderRadius:
-                      BorderRadius.only(topRight: Radius.circular(20))),
-              child: Center(
+                      const BorderRadius.only(topRight: Radius.circular(20))),
+              child: const Center(
                 child: Text(
                   "Center",
                   style: TextStyle(

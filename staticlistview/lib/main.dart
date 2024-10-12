@@ -21,10 +21,10 @@ class MainApp extends StatelessWidget {
             children: [
               Image.network(
                   "https://i.pinimg.com/736x/dc/9e/f4/dc9ef4a49c8342d6f5d22c2f0fe5b33e.jpg"),
-              Row(
+              const Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Icon(
+                  Icon(
                     Icons.favorite,
                     color: Colors.red,
                   ),
@@ -39,10 +39,10 @@ class MainApp extends StatelessWidget {
               ),
               Image.network(
                   "https://i.pinimg.com/736x/dc/9e/f4/dc9ef4a49c8342d6f5d22c2f0fe5b33e.jpg"),
-              Row(
+              const Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Icon(
+                  Icon(
                     Icons.favorite,
                     color: Colors.red,
                   ),
@@ -57,10 +57,10 @@ class MainApp extends StatelessWidget {
               ),
               Image.network(
                   "https://i.pinimg.com/736x/dc/9e/f4/dc9ef4a49c8342d6f5d22c2f0fe5b33e.jpg"),
-              Row(
+              const Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Icon(
+                  Icon(
                     Icons.favorite,
                     color: Colors.red,
                   ),
@@ -81,7 +81,7 @@ class MainApp extends StatelessWidget {
                   width: 50,
                   height: 50,
                   color: Colors.blue,
-                  child: Text("Press Me"),
+                  child: const Text("Press Me"),
                 ),
               ),
               Container(

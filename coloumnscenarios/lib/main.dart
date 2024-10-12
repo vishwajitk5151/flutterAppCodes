@@ -15,7 +15,7 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
           appBar: AppBar(
               backgroundColor: Colors.blue,
-              title: Text(
+              title: const Text(
                 "Column Demo",
                 style: TextStyle(
                   fontWeight: FontWeight.w800,
@@ -23,7 +23,7 @@ class MainApp extends StatelessWidget {
                 ),
               )),
           body: Padding(
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             child: Container(
               width: MediaQuery.of(context).size.width,
               color: Colors.red,

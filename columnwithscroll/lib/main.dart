@@ -12,12 +12,12 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
           appBar: AppBar(
-            title: Center(child: Text("Column with Scroll")),
+            title: const Center(child: Text("Column with Scroll")),
             backgroundColor: const Color.fromARGB(255, 230, 192, 192),
           ),
           body: SingleChildScrollView(
             child: Padding(
-              padding: EdgeInsets.only(right: 10, left: 10),
+              padding: const EdgeInsets.only(right: 10, left: 10),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [

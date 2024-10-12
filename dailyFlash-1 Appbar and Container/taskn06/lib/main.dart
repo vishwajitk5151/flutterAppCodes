@@ -12,7 +12,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text(
+          title: const Text(
             "AppBar",
             style: TextStyle(
                 fontWeight: FontWeight.w700,
@@ -29,13 +29,13 @@ class MainApp extends StatelessWidget {
         (
           scrollDirection: Axis.vertical,
           child: Padding(
-            padding: EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
             child: Column(
               children: [
                 Container(
                   height: 200,
                   width: MediaQuery.of(context).size.width,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.red,
 
                   ),
@@ -43,7 +43,7 @@ class MainApp extends StatelessWidget {
                 Container(
                   height: 200,
                   width: MediaQuery.of(context).size.width,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.red,
 
                   ),
@@ -51,7 +51,7 @@ class MainApp extends StatelessWidget {
                 Container(
                   height: 200,
                   width: MediaQuery.of(context).size.width,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.yellow,
 
                   ),
@@ -59,7 +59,7 @@ class MainApp extends StatelessWidget {
                 Container(
                   height: 200,
                   width: MediaQuery.of(context).size.width,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.blue,
 
                   ),
@@ -67,7 +67,7 @@ class MainApp extends StatelessWidget {
                 Container(
                   height: 200,
                   width: MediaQuery.of(context).size.width,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.purple,
 
                   ),

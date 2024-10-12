@@ -12,12 +12,12 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text(
+          title: const Text(
             "AppBar",
             style: TextStyle(
                 fontWeight: FontWeight.w700,
                 fontSize: 24,
-                color: const Color.fromARGB(255, 73, 0, 86)),
+                color: Color.fromARGB(255, 73, 0, 86)),
           ),
           centerTitle: true,
           actions: const [
@@ -29,7 +29,7 @@ class MainApp extends StatelessWidget {
             child: Container(
           height: 360,
           width: 150,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Colors.blue,
           ),
         )),

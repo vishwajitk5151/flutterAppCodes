@@ -12,7 +12,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
           appBar: AppBar(
-            title: Text(
+            title: const Text(
               "AppBar",
               style: TextStyle(
                   fontWeight: FontWeight.w700,
@@ -29,7 +29,7 @@ class MainApp extends StatelessWidget {
           body: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
+              SizedBox(
                 width: MediaQuery.of(context).size.width,
                 height: 150,
                 child: Image.network(
@@ -37,7 +37,7 @@ class MainApp extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              Container(
+              SizedBox(
                 width: MediaQuery.of(context).size.width,
                 height: 150,
                 child: Image.network(
@@ -45,7 +45,7 @@ class MainApp extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              Container(
+              SizedBox(
                 width: MediaQuery.of(context).size.width,
                 height: 150,
                 child: Image.network(

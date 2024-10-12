@@ -48,6 +48,7 @@ class _InputdemoState extends State<Inputdemo> {
             ),
             Container(
               decoration: BoxDecoration(border: Border.all()),
+              width: 350,
               child: TextField(
                 controller: namecontroller,
                 decoration: InputDecoration(
@@ -56,13 +57,13 @@ class _InputdemoState extends State<Inputdemo> {
                       color: Colors.green,
                     )),
               ),
-              width: 350,
             ),
             const SizedBox(
               height: 20,
             ),
             Container(
               decoration: BoxDecoration(border: Border.all()),
+              width: 350,
               child: TextField(
                 controller: companycontroller,
                 decoration: const InputDecoration(
@@ -71,7 +72,6 @@ class _InputdemoState extends State<Inputdemo> {
                       color: Colors.green,
                     )),
               ),
-              width: 350,
             ),
             const SizedBox(
               height: 20,
@@ -91,14 +91,14 @@ class _InputdemoState extends State<Inputdemo> {
               child: Container(
                 width: 250,
                 height: 50,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.blue),
                 child: const Center(
                   child: Text("Submit",
                       style:
                           TextStyle(fontWeight: FontWeight.w700, fontSize: 22)),
                 ),
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.blue),
               ),
             ),
             const SizedBox(

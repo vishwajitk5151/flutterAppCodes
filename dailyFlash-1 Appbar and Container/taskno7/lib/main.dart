@@ -69,35 +69,35 @@ class _ImageScrollWidgetState extends State<ImageScrollWidget> {
               padding: const EdgeInsets.all(10),
               child: Row(
                 children: [
-                  Container(
+                  SizedBox(
                       width: MediaQuery.of(context).size.width,
                       height: 180,
                       child: Image.network(
                         "https://img.freepik.com/free-photo/illustration-anime-character-rain_23-2151394666.jpg",
                         fit: BoxFit.cover,
                       )),
-                  Container(
+                  SizedBox(
                       width: MediaQuery.of(context).size.width,
                       height: 180,
                       child: Image.network(
                         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdJPNnW5bWxP5P5iaR1K2YNsReK8EpUMcZzQ&s",
                         fit: BoxFit.cover,
                       )),
-                  Container(
+                  SizedBox(
                       width: MediaQuery.of(context).size.width,
                       height: 180,
                       child: Image.network(
                         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ_EBbXFzfE95zvP4MX_Wyg1XRi7FpEG7cfQ&s",
                         fit: BoxFit.cover,
                       )),
-                  Container(
+                  SizedBox(
                       width: MediaQuery.of(context).size.width,
                       height: 180,
                       child: Image.network(
                         "https://motionbgs.com/i/c/364x205/media/6372/blue-haired-blind-girl.jpg",
                         fit: BoxFit.cover,
                       )),
-                  Container(
+                  SizedBox(
                       width: MediaQuery.of(context).size.width,
                       height: 180,
                       child: Image.network(

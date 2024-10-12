@@ -12,7 +12,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Space Scenario"),
+          title: const Text("Space Scenario"),
           backgroundColor: const Color.fromARGB(255, 230, 192, 192),
         ),
         body: Column(
@@ -21,12 +21,12 @@ class MainApp extends StatelessWidget {
             Container(
               height: 200,
               width: 200,
-              decoration: BoxDecoration(color: Colors.blue),
+              decoration: const BoxDecoration(color: Colors.blue),
             ),
             Container(
               height: 200,
               width: 200,
-              decoration: BoxDecoration(color: Colors.blue),
+              decoration: const BoxDecoration(color: Colors.blue),
             )
           ],
         ),
