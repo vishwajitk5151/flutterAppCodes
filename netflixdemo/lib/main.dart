@@ -17,35 +17,35 @@ class NetflixApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.black,
       ),
       home: NetflixHomePage(),
-      debugShowCheckedModeBanner: false, // Hide the debug banner
+      debugShowCheckedModeBanner: false, 
     );
   }
 }
 
 class NetflixHomePage extends StatelessWidget {
-  // Fixed movie posters URLs
+  
   final List<String> trendingMovies = [
-    'https://image.tmdb.org/t/p/w500/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg', // Spider-Man: No Way Home
-    'https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg', // Avatar: The Way of Water
-    'https://image.tmdb.org/t/p/w500/odJ4hx6g6vBt4lBWKFD1tI8WS4x.jpg', // Dune
-    'https://image.tmdb.org/t/p/w500/w2PMyoyLU22YvrGK3smVM9fW1jj.jpg', // No Time to Die
-    'https://image.tmdb.org/t/p/w500/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg', // Free Guy
+    'https://image.tmdb.org/t/p/w500/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg', 
+    'https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg', 
+    'https://image.tmdb.org/t/p/w500/odJ4hx6g6vBt4lBWKFD1tI8WS4x.jpg', 
+    'https://image.tmdb.org/t/p/w500/w2PMyoyLU22YvrGK3smVM9fW1jj.jpg', 
+    'https://image.tmdb.org/t/p/w500/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg', 
   ];
 
   final List<String> popularMovies = [
-    'https://image.tmdb.org/t/p/w500/zEqyD0SBt6HL7W9JQoWwtd5Do1T.jpg', // John Wick 4
-    'https://image.tmdb.org/t/p/w500/iZvzMpREGiqDQ5eYbx8z70qPgst.jpg', // Fast X
-    'https://image.tmdb.org/t/p/w500/sv1xJUazXeYqALzczSZ3O6nkH75.jpg', // The Flash
-    'https://image.tmdb.org/t/p/w500/rktDFPbfHfUbArZ6OOOKsXcv0Bm.jpg', // Guardians of the Galaxy Vol. 3
-    'https://image.tmdb.org/t/p/w500/3GrRgt6CiLIUXUtoktcv1g2iwT5.jpg', // The Super Mario Bros. Movie
+    'https://image.tmdb.org/t/p/w500/zEqyD0SBt6HL7W9JQoWwtd5Do1T.jpg', 
+    'https://image.tmdb.org/t/p/w500/iZvzMpREGiqDQ5eYbx8z70qPgst.jpg',
+    'https://image.tmdb.org/t/p/w500/sv1xJUazXeYqALzczSZ3O6nkH75.jpg', 
+    'https://image.tmdb.org/t/p/w500/rktDFPbfHfUbArZ6OOOKsXcv0Bm.jpg', 
+    'https://image.tmdb.org/t/p/w500/3GrRgt6CiLIUXUtoktcv1g2iwT5.jpg', 
   ];
 
   final List<String> newReleases = [
-    'https://image.tmdb.org/t/p/w500/8I37NtDffNV7AZlDa7uDvvqhovU.jpg', // Mission: Impossible - Dead Reckoning Part One
-    'https://image.tmdb.org/t/p/w500/r7Dfg9aRZ78gJsmDlCirIIlNH3d.jpg', // Oppenheimer
-    'https://image.tmdb.org/t/p/w500/5OtRrvblfsYHgGq8RZusC9CpO5Y.jpg', // Barbie
-    'https://image.tmdb.org/t/p/w500/gPbM0MK8CP8A174rmUwGsADNYKD.jpg', // Blue Beetle
-    'https://image.tmdb.org/t/p/w500/A5P3vFu2xMl9TXOP0xQ97pKPpxH.jpg', // The Equalizer 3
+    'https://image.tmdb.org/t/p/w500/8I37NtDffNV7AZlDa7uDvvqhovU.jpg', 
+    'https://image.tmdb.org/t/p/w500/r7Dfg9aRZ78gJsmDlCirIIlNH3d.jpg', 
+    'https://image.tmdb.org/t/p/w500/5OtRrvblfsYHgGq8RZusC9CpO5Y.jpg', 
+    'https://image.tmdb.org/t/p/w500/gPbM0MK8CP8A174rmUwGsADNYKD.jpg', 
+    'https://image.tmdb.org/t/p/w500/A5P3vFu2xMl9TXOP0xQ97pKPpxH.jpg', 
   ];
 
    NetflixHomePage({super.key});
@@ -68,7 +68,7 @@ class NetflixHomePage extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.search, color: Colors.white),
             onPressed: () {
-              // Search functionality can be implemented here
+              
             },
           ),
         ],
@@ -78,7 +78,7 @@ class NetflixHomePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Banner with gradient overlay
+            
             Stack(
               children: [
                 Container(
@@ -107,7 +107,7 @@ class NetflixHomePage extends StatelessWidget {
               ],
             ),
 
-            // Movie Categories
+           
             const Padding(
               padding: EdgeInsets.all(16.0),
               child: Text(
