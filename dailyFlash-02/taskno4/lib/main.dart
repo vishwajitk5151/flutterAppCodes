@@ -29,12 +29,13 @@ class MainApp extends StatelessWidget {
           body: Center(
             child: Container(
               height: 100,
-              width: 100,
+              width: 200,
               decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 219, 157, 234),
                   border: Border.all(color: Colors.purple),
-                  borderRadius:
-                      const BorderRadius.only(topRight: Radius.circular(20),topLeft: Radius.circular(20))),
+                  borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(20),
+                      bottomRight: Radius.circular(20))),
               child: const Center(
                 child: Text(
                   "Center",

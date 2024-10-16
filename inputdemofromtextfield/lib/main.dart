@@ -51,7 +51,7 @@ class _InputdemoState extends State<Inputdemo> {
               width: 350,
               child: TextField(
                 controller: namecontroller,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                     hintText: "Name",
                     hintStyle: TextStyle(
                       color: Colors.green,

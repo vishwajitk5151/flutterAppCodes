@@ -46,16 +46,16 @@ class _MainAppState extends State<MainApp> {
                 controller: namecontroller,
                 decoration: InputDecoration(
                   hintText: "Name of Player",
-                  contentPadding: EdgeInsets.only(left: 20),
+                  contentPadding: const EdgeInsets.only(left: 20),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(20),
-                    borderSide: BorderSide(
-                      color: const Color.fromARGB(255, 162, 58, 148),
+                    borderSide: const BorderSide(
+                      color: Color.fromARGB(255, 162, 58, 148),
                       width: 5,
                     ),
                   ),
                   enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.red, width: 5),
+                    borderSide: const BorderSide(color: Colors.red, width: 5),
                     borderRadius: BorderRadius.circular(20),
                   ),
                 ),
@@ -67,16 +67,16 @@ class _MainAppState extends State<MainApp> {
                 controller: agecontroller,
                 decoration: InputDecoration(
                   hintText: "Age of the Player",
-                  contentPadding: EdgeInsets.only(left: 20),
+                  contentPadding: const EdgeInsets.only(left: 20),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(20),
-                    borderSide: BorderSide(
-                      color: const Color.fromARGB(255, 162, 58, 148),
+                    borderSide: const BorderSide(
+                      color: Color.fromARGB(255, 162, 58, 148),
                       width: 5,
                     ),
                   ),
                   enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.red, width: 5),
+                    borderSide: const BorderSide(color: Colors.red, width: 5),
                     borderRadius: BorderRadius.circular(20),
                   ),
                 ),
@@ -88,16 +88,16 @@ class _MainAppState extends State<MainApp> {
                 controller: teamcontroller,
                 decoration: InputDecoration(
                   hintText: "Team of the Player",
-                  contentPadding: EdgeInsets.only(left: 20),
+                  contentPadding: const EdgeInsets.only(left: 20),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(20),
-                    borderSide: BorderSide(
-                      color: const Color.fromARGB(255, 162, 58, 148),
+                    borderSide: const BorderSide(
+                      color: Color.fromARGB(255, 162, 58, 148),
                       width: 5,
                     ),
                   ),
                   enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.red, width: 5),
+                    borderSide: const BorderSide(color: Colors.red, width: 5),
                     borderRadius: BorderRadius.circular(20),
                   ),
                 ),
@@ -129,7 +129,7 @@ class _MainAppState extends State<MainApp> {
                     color: Colors.blue,
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Submit",
                       style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20),

@@ -40,7 +40,7 @@ class _TextAppState extends State<MainApp> {
                 controller: namecontroller,
                 style: const TextStyle(fontSize: 30, color: Colors.blue),
                 obscureText: true,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                     suffixIcon: Icon(Icons.visibility),
                     hintText: "name",
                     hintStyle: TextStyle(color: Colors.white, fontSize: 25),
@@ -72,7 +72,7 @@ class _TextAppState extends State<MainApp> {
                 color: Colors.blue,
                 borderRadius: BorderRadius.circular(20),
               ),
-              child: Text(
+              child: const Text(
                 "Add Data ",
                 style: TextStyle(
                   fontSize: 24,
@@ -86,7 +86,7 @@ class _TextAppState extends State<MainApp> {
           ),
           Text(
             "Myname: $name",
-            style: TextStyle(color: Colors.white),
+            style: const TextStyle(color: Colors.white),
           )
         ]),
       ),
